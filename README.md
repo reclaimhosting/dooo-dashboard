@@ -12,7 +12,7 @@
 
 3. Run the `copy_reports.sh` script at least once and activate the plugin in the WP Dashboard to test things are working
    ```bash
-   ./data/copy_reports.sh
+   ./copy_reports.sh
    ```
 
 4. Add it to cron and run daily
@@ -21,5 +21,5 @@ crontab -e
 ```
 
 ```
-0 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/data/copy_reports.sh > /tmp/copy_reports.log
+0 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.log
 ```
