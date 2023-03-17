@@ -1,12 +1,21 @@
 ## Setup notes:
 
 1. `cd` to plugins directory of main DoOO WP site
-```bash
-cd /home/USERNAME/public_html/wp-content/plugins
-```
-2. Clone this git repo
-```bash
-git clone https://github.com/reclaimhosting/dooo-dashboard.git
-```
+    ```bash
+    cd /home/USERNAME/public_html/wp-content/plugins
+    ```
 
-3. Add it to run in the cron daily
+2. Clone this git repo
+    ```bash
+    git clone https://github.com/reclaimhosting/dooo-dashboard.git
+    ```
+
+3. Run the `copy_reports.sh` script at least once and activate the plugin in the WP Dashboard to test things are working
+   ```bash
+   ./data/copy_reports.sh
+   ```
+
+4. Add it to run in the cron daily
+   ```bash
+    ln -rs data/copy_reports.sh /etc/cron.daily/copy_reports
+    ```
