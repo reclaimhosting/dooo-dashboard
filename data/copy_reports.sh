@@ -6,7 +6,7 @@ USER=`echo $SCRIPT_DIR | cut -d '/' -f 3`
 HOST=`echo $HOSTNAME | cut -d '.' -f 1`
 
 # Clear out file and write php boilerplate
-cat $SCRIPT_DIR/template.php > $SCRIPT_DIR/last-logins.php
+cat $SCRIPT_DIR/template.txt > $SCRIPT_DIR/last-logins.php
 
 # Write report data
 cat /root/"$HOST"_last_logins.csv >> $SCRIPT_DIR/last-logins.php

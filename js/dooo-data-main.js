@@ -8,11 +8,11 @@ jQuery(document).ready(function() {
             'copy',
             {
               extend: 'excelHtml5',
-              header: false,
+              header: true,
               title: null
             },{
               extend: 'csvHtml5',
-              header: false,
+              header: true,
               title: null
             }          
         ]
