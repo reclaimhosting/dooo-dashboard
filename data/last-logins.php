@@ -1,10 +1,4 @@
 <?php
-/**
- * DoOO Data destination
- *
- * 
- **/
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
