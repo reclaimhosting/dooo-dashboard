@@ -15,7 +15,7 @@
    ./data/copy_reports.sh
    ```
 
-4. Add it to run in the cron daily
+4. Add it to cron and run daily
 ```bash
 crontab -e
 ```
