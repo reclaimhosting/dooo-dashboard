@@ -16,4 +16,10 @@
    ```
 
 4. Add it to run in the cron daily
+```bash
+crontab -e
+```
 
+```
+0 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/data/copy_reports.sh > /tmp/copy_reports.log
+```
