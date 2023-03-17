@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# What username is WP installed in?
+# What user is WP installed in?
 USER=
 
 # Setup
