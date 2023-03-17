@@ -7,7 +7,7 @@ HOST=`echo $HOSTNAME | cut -d '.' -f 1`
 
 # Clear out file and write php boilerplate
 cat $SCRIPT_DIR/template.php > $SCRIPT_DIR/last-logins.php
-echo "$bar = \'LAST LOGIN DATE, USERNAME, EMAIL, PRIMARY DOMAIN, DISK USAGE, START DATE" >> $SCRIPT_DIR/last-logins.php
+echo '$bar = \'LAST LOGIN DATE, USERNAME, EMAIL, PRIMARY DOMAIN, DISK USAGE, START DATE' >> $SCRIPT_DIR/last-logins.php
 
 # Write report data
 cat /root/"$HOST"_last_logins.csv >> $SCRIPT_DIR/last-logins.php
