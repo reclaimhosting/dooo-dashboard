@@ -15,6 +15,6 @@ echo `cat /root/"$HOST"_last_logins.csv` >> $SCRIPT_DIR/last-logins.php
 # Add final semicolon
 echo "';" >> $SCRIPT_DIR/last-logins.php
 
-# Make sure report is readable by WP
-chown $USER:$USER $SCRIPT_DIR/last_logins.php
-chmod 755 $SCRIPT_DIR/last_logins.php
+# Make sure reports are readable by WP
+chown $USER:$USER $SCRIPT_DIR/*.php
+chmod 755 $SCRIPT_DIR/*.php
