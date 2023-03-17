@@ -7,7 +7,7 @@ USER=
 # Setup
 PLUGIN_DATA_DIR=/home/"$USER"/public_html/wp-content/plugins/doooo-dashboard/data
 
-# Write php boilerplate
+# Clear out file and write php boilerplate
 echo -n `cat $PLUGIN_DATA_DIR/last-logins-template.php` > $PLUGIN_DATA_DIR/last_logins.php
 
 # Write report data
