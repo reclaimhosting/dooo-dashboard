@@ -3,3 +3,4 @@
 defined( 'ABSPATH' ) || exit;
 
 // The data
+$bar = '
