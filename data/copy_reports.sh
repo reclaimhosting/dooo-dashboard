@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Config
-HOST=
+# What username is WP installed in?
 USER=
 
 # Setup
+HOST=`echo $HOSTNAME | cut -d '.' -f 1`
 PLUGIN_DATA_DIR=/home/"$USER"/public_html/wp-content/plugins/doooo-dashboard/data
 
 # Clear out file and write php boilerplate
