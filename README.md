@@ -16,6 +16,4 @@
    ```
 
 4. Add it to run in the cron daily
-   ```bash
-    ln -rs data/copy_reports.sh /etc/cron.daily/copy_reports
-    ```
+
