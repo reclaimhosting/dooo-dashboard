@@ -15,3 +15,7 @@ echo -n `cat /root/"$HOST"_last_logins.csv` >> $PLUGIN_DATA_DIR/last_logins.php
 
 # Add final semicolon
 echo ";" >> $PLUGIN_DATA_DIR/last_logins.php
+
+# Make sure report is readable by WP
+chown $USER:$USER PLUGIN_DATA_DIR/last_logins.php
+chmod 755 PLUGIN_DATA_DIR/last_logins.php
