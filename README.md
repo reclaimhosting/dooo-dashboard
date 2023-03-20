@@ -23,5 +23,5 @@
     Add this line, replacing USERNAME with the username of the cPanel account that has the DoOO WP front-end
 
     ```
-    0 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.log
+    1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.log
     ```
