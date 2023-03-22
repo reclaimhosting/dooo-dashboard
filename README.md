@@ -25,3 +25,16 @@
     ```
     1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.log
     ```
+
+### If there are multiple WHM servers in their DoOO
+Call the script with the other server names as arguments. Keypairs will need to be set up for stuff to copy between servers properly.
+
+Ex:
+```bash
+bash copy_reports.sh stateu2 stateu3 stateu4
+```
+
+or in the cron:
+```bash
+1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh stateu2 stateu3 stateu4 > /tmp/copy_reports.log
+```
