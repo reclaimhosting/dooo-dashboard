@@ -17,12 +17,12 @@ crontab -e
 
 Add this line, replacing USERNAME with the username of the cPanel account that has the DoOO WP front-end
 ```bash
-1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.log 2>&1
+1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.cron 2>&1
 ```
 
 4. Test your cron entry by copying the whole line, removing the leading timing info, and running the command:
 ```bash
-/home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.log 2>&1
+/home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.cron 2>&1
 ```
 
 Then activate the plugin in WP and make sure things are working.
@@ -37,5 +37,5 @@ bash copy_reports.sh stateu2 stateu3 stateu4
 
 or in the cron:
 ```bash
-1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh stateu2 stateu3 stateu4 > /tmp/copy_reports.log 2>&1
+1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh stateu2 stateu3 stateu4 > /tmp/copy_reports.cron 2>&1
 ```
