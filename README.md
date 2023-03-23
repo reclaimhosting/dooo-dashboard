@@ -1,16 +1,18 @@
 ## Setup notes:
 
+First find the username of the cPanel account that hosts their front-end WP site.
+
 1. `cd` to plugins directory of the main DoOO WP site
 ```bash
 cd /home/USERNAME/public_html/wp-content/plugins
 ```
 
-2. Clone this git repo
+1. Clone this git repo
 ```bash
 git clone https://github.com/reclaimhosting/dooo-dashboard.git
 ```
 
-3. Add it to cron to run daily
+1. Add it to cron to run daily
 ```bash
 crontab -e
 ```
@@ -28,6 +30,7 @@ Add this line, replacing USERNAME with the username of the cPanel account that h
 Then activate the plugin in WP and make sure things are working.
 
 ### If there are multiple WHM servers in their DoOO
+
 Call the script with the other server names as arguments. Keypairs and ssh config will need to be set up for stuff to copy between servers properly.
 
 Ex:
