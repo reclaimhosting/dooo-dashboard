@@ -30,7 +30,7 @@ Add this line, replacing USERNAME with the username of the cPanel account that h
 Then activate the plugin in WP and make sure things are working.
 
 ### If there are multiple WHM servers in their DoOO
-Call the script with the other server names as arguments. Keypairs will need to be set up for stuff to copy between servers properly.
+Call the script with the other server names as arguments. Keypairs and ssh config will need to be set up for stuff to copy between servers properly.
 
 Ex:
 ```bash
