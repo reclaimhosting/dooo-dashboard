@@ -13,7 +13,7 @@ cat /root/"$HOST"_last_logins.csv >> $SCRIPT_DIR/data/last-logins.php
 
 # Get reports from other servers
 # Pass them as arguments when calling the script ex: `bash copy_reports.sh stateu2 stateu3 stateu4`
-# Make sure ssh keypairs are setup so this actually works
+# Make sure ssh keypairs are set up so this actually works
 for OTHER_HOST in "$@"
 do
 scp root@"$OTHER_HOST".reclaimhosting.com:/root/"$OTHER_HOST"_last_logins.csv /root/"$OTHER_HOST"_last_logins.csv
