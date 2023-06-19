@@ -31,7 +31,7 @@ Then activate the plugin in WP and make sure things are working.
 
 ### If there are multiple WHM servers in their DoOO
 
-Call the script with the other server names as arguments. Keypairs and ssh config will need to be set up for stuff to copy between servers properly.
+Call the script with the other server names as arguments. Keypairs and ssh config will need to be set up for stuff to copy between servers properly. Usually this involves making sure a keypair is generated on the main server with the WP site where the cron job will run, other servers have the public key, and the ssh config on the main server has been updated. 
 
 Ex:
 ```bash
