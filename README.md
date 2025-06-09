@@ -22,7 +22,7 @@ Add this line, replacing USERNAME with the username of the cPanel account that h
 1 0 * * * /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.cron 2>&1
 ```
 
-4. Test your cron entry by copying the whole line, removing the leading timing info, and running the command:
+Test your cron entry by copying the whole line, removing the leading timing info, and running the command:
 ```bash
 /home/USERNAME/public_html/wp-content/plugins/dooo-dashboard/copy_reports.sh > /tmp/copy_reports.cron 2>&1
 ```
